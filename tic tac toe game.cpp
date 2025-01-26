@@ -49,7 +49,7 @@ int main ()
 			while (cordinatex > 2 || cordinatex < 0 || cordinatey>2 || cordinatey < 0 || validate[cordinatex][cordinatey] == true)
 			{
 				cout << endl << "invalid cordinate enter again ";
-				cout << "endl<< x cordinate 0-2  cordinate to place o ";
+				cout << endl<<" x cordinate 0 - 2  cordinate to place o ";
 				cin >> cordinatex;
 				cout << endl << " y cordinate 0-2  cordinate to place o ";
 				cin >> cordinatey;
@@ -63,7 +63,8 @@ int main ()
 		else if (p2)
 		{
 			cout << "player " << player << " turn :";
-			player = 2;
+
+			player = 1;
 			p2 = false;
 			cout << " x cordinate 0-2  cordinate to place x ";
 			cin >> cordinatex;
@@ -121,7 +122,7 @@ int main ()
 			cout << endl << "PLAYER 2 WON !";
 			won = true;
 		}
-		else if ((arr[0][0] == '0' && arr[1][1] == '0' && arr[2][2] == '0') ||( arr[0][2] == '0' && arr[1][1] == '0' && arr[2][0] == '0'))
+		 if ((arr[0][0] == 'o' && arr[1][1] == 'o' && arr[2][2] == 'o') ||( arr[0][2] == 'o' && arr[1][1] == 'o' && arr[2][0] == 'o'))
 		{
 			cout << endl << "Player 1 Won ! ";
 			won = true;
